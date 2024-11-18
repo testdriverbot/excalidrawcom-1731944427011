@@ -1,0 +1,12 @@
+version: 4.1.27
+steps:
+  - prompt: Assert the webpage loads successfully.
+    commands:
+      - command: assert
+        expect: the "EXCALIDRAW" logo is visible
+  - prompt: >-
+      Assert the "Excalidraw" logo is visible on the page.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: the "EXCALIDRAW" text is visible
