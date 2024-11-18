@@ -1,0 +1,14 @@
+version: 4.1.27
+steps:
+  - prompt: Click on "Open" button in the main section.
+    commands:
+      - command: hover-text
+        text: Open
+        description: open button in the main section
+        action: click
+  - prompt: >-
+      Assert that the open file dialog appears.  # Use the content of the file
+      from the environment
+    commands:
+      - command: assert
+        expect: the open file dialog is visible with the "File name" input field
