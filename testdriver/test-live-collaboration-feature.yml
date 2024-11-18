@@ -1,0 +1,14 @@
+version: 4.1.27
+steps:
+  - prompt: Click on "Live collaboration" link.
+    commands:
+      - command: hover-text
+        text: Live collaboration...
+        description: link for live collaboration feature
+        action: click
+  - prompt: >-
+      Assert that the collaboration feature is activated or a relevant page
+      opens.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the live collaboration dialog is visible with a start session button
