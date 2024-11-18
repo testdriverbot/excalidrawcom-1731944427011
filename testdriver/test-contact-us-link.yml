@@ -1,0 +1,31 @@
+version: 4.1.27
+steps:
+  - prompt: Scroll through the webpage.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll through the webpage.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll through the webpage.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll through the webpage.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll through the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - pagedown
+  - prompt: Scroll through the webpage.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Scroll through the webpage.
+    commands:
+      - command: scroll
+        direction: down
